@@ -2,14 +2,24 @@
 
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <title>{{title}}</title>
-    <meta charset="utf-8">
-    {% bootstrap_css %}
-    {% bootstrap_javascript %}
-  </head>
-  <body>
-    {% block content %}
-    {% endblock content %}
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+        <title>{{title}}</title>
+
+    </head>
+
+    <body>
+
+        {% block content %}
+        {% endblock content %}
+
+        <button type="button" class="btn btn-primary mt-3">当サイトで学ぶBootstrapの使い方</button>
+        <!-- jQueryの読み込み -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     
+    </body>
 </html>
